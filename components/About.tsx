@@ -4,13 +4,14 @@ const About = () => (
   <section id="sobre" className="py-24 bg-white overflow-hidden">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row gap-20 items-center">
-        <div className="md:w-1/2 relative group">
+        <div className="md:w-1/2 relative group reveal">
           <div className="absolute -top-4 -left-4 w-full h-full border border-gold/20 -z-10 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-500"></div>
           <div className="relative overflow-hidden shadow-2xl border border-slate-100">
             <img
               src="/IMG_1061.jpg"
               className="w-full grayscale group-hover:grayscale-0 transition-all duration-1000 transform group-hover:scale-105"
               alt="Dra. Maria Helena Petry de Lima - Sócia Fundadora"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
           </div>
@@ -19,7 +20,7 @@ const About = () => (
             <p className="text-lg font-serif">OAB/RS 77.839</p>
           </div>
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 reveal reveal-delay-2">
           <span className="text-gold font-bold uppercase tracking-[0.4em] text-[10px] mb-4 block">Sócia-Fundadora</span>
           <h2 className="text-5xl font-serif text-charcoal mb-8">Dra. Maria Helena <br />Petry de Lima</h2>
           <div className="w-16 h-0.5 bg-gold mb-8"></div>

@@ -80,6 +80,15 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="block mt-4 bg-gold text-white text-center py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-charcoal transition-all no-underline"
+            >
+              Agendar Consultoria
+            </a>
           </div>
         </div>
       )}

@@ -4,7 +4,8 @@
       "Bash(npm run:*)",
       "Bash(npm install:*)",
       "Bash(gh auth:*)",
-      "Bash(git --version)"
+      "Bash(git --version)",
+      "Bash(npx skills:*)"
     ]
   }
 }

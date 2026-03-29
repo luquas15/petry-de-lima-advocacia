@@ -29,7 +29,7 @@ const Footer = () => (
 
       <div className="w-24 h-px bg-white/10 mx-auto mb-10"></div>
 
-      <p className="text-[10px] uppercase tracking-[0.2em] mb-4 text-white/20">contato@petrydelima.com.br</p>
+      <a href="mailto:contato@petrydelima.com.br" className="text-[10px] uppercase tracking-[0.2em] mb-4 text-white/20 hover:text-gold transition-colors block no-underline">contato@petrydelima.com.br</a>
       <p className="text-[9px] uppercase tracking-[0.1em] leading-relaxed max-w-sm mx-auto">
         © {new Date().getFullYear()} Petry de Lima Advocacia. OAB/RS 77.839. <br />
         Gravataí/RS. Excelência Jurídica e Atendimento Humanizado.

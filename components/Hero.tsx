@@ -11,11 +11,12 @@ const Hero = () => (
         alt="Escritório Minimalista"
         width="2000"
         height="1333"
+        loading="eager"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/80 via-transparent to-charcoal"></div>
     </div>
     <div className="relative z-10 text-center px-4 max-w-5xl">
-      <div className="mb-6 flex justify-center animate-pulse">
+      <div className="mb-6 flex justify-center logo-animate">
         <PetryLogo className="w-24 h-24" />
       </div>
       <h1 className="text-4xl md:text-7xl font-serif text-white mb-6 leading-tight">
