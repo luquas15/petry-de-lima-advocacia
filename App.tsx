@@ -1,5 +1,4 @@
 import { MessageCircle } from 'lucide-react';
-import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,22 +11,6 @@ import Footer from './components/Footer';
 const WHATSAPP_URL = 'https://wa.me/5551995553947';
 
 export default function App() {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-
-    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="min-h-screen selection:bg-gold selection:text-white scroll-smooth bg-white">
       <Navbar />

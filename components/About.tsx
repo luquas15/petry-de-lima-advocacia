@@ -1,10 +1,19 @@
+import { motion } from 'motion/react';
 import { Linkedin } from 'lucide-react';
+
+const viewport = { once: true, margin: '-80px' };
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 48 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport,
+  transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1], delay },
+});
 
 const About = () => (
   <section id="sobre" className="py-24 bg-white overflow-hidden">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row gap-20 items-center">
-        <div className="md:w-1/2 relative group reveal">
+        <motion.div className="md:w-1/2 relative group" {...fadeUp(0)}>
           <div className="absolute -top-4 -left-4 w-full h-full border border-gold/20 -z-10 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-500"></div>
           <div className="relative overflow-hidden shadow-2xl border border-slate-100">
             <img
@@ -19,8 +28,9 @@ const About = () => (
             <p className="text-gold font-bold text-xs tracking-widest uppercase mb-1">Inscrição Profissional</p>
             <p className="text-lg font-serif">OAB/RS 77.839</p>
           </div>
-        </div>
-        <div className="md:w-1/2 reveal reveal-delay-2">
+        </motion.div>
+
+        <motion.div className="md:w-1/2" {...fadeUp(0.2)}>
           <span className="text-gold font-bold uppercase tracking-[0.4em] text-[10px] mb-4 block">Sócia-Fundadora</span>
           <h2 className="text-5xl font-serif text-charcoal mb-8">Dra. Maria Helena <br />Petry de Lima</h2>
           <div className="w-16 h-0.5 bg-gold mb-8"></div>
@@ -32,7 +42,7 @@ const About = () => (
               <Linkedin size={18} /> LinkedIn
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   </section>

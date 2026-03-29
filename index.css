@@ -5,7 +5,7 @@
   --color-charcoal: #121212;
 
   --font-serif: 'Playfair Display', serif;
-  --font-sans: 'Cormorant Garamond', serif;
+  --font-sans: 'Raleway', sans-serif;
 }
 
 /* Custom scrollbar */
@@ -49,23 +49,6 @@ textarea:focus {
   background: rgba(18, 18, 18, 0.8);
   backdrop-filter: blur(10px);
 }
-
-/* Scroll reveal animations */
-.reveal {
-  opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
 
 /* Logo subtle entrance animation */
 @keyframes logo-fade-in {
